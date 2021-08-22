@@ -11,13 +11,18 @@
             background: lightgray;
         }
 
-        #portrait {
+        .portrait {
             width: 170px;
             margin: auto;
         }
 
-        #name {
+        .portrait-smallscreen {
+            margin-bottom: 5px;
+        }
+
+        .name {
             text-align: center;
+            line-height: 100px;        
         }
 
         .header {
@@ -38,13 +43,13 @@
 
         <div class="row">
             
-            <div class="col-3" id="portrait">
-                <img src="self.jpg" alt="Marko Antić slika">
-            </div>
-            <div class="col-sm-9 col-12">
+            <div class="col-md-9 col-12">
                 <div class="row" >
-                    <div class="col" id="name">
-                        <h1>Marko Antić</h1>
+                    <div class="col-12">
+                        <h1 class="name">Marko Antić</h1>
+                    </div>
+                    <div class="d-block d-md-none col-12 mb-5 portrait portrait-smallscreen">
+                        <img src="self.jpg" alt="Marko Antić slika">
                     </div>
                 </div>
                 <div class="row">
@@ -64,6 +69,9 @@
                     <div class="col-8"><a href="https://github.com/MVA993 ">https://github.com/MVA993 </a></div>
                 </div>
                 
+            </div>
+            <div class="d-none d-md-block col-md-3 col-12 portrait">
+                <img src="self.jpg" alt="Marko Antić slika">
             </div>
         </div>
     
